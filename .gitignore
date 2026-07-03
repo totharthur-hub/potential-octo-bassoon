@@ -1,33 +1,230 @@
-# Dependencies
-node_modules/
-package-lock.json
-yarn.lock
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agronegócio Brasil - Portal Informativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container-nav">
+            <div class="logo">
+                <h1>🌾 Agronegócio Brasil</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
-# Environment variables
-.env
-.env.local
-.env.*.local
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Portal do Agronegócio Brasileiro</h2>
+            <p>Descubra a força e a importância da agricultura no Brasil</p>
+            <button class="btn-primary" onclick="scrollTo('sobre')">Saiba Mais</button>
+        </div>
+    </section>
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre o Agronegócio no Brasil</h2>
+            <div class="content-grid">
+                <div class="card">
+                    <h3>📊 Importância Econômica</h3>
+                    <p>O agronegócio é um dos pilares da economia brasileira, representando aproximadamente 25% do PIB e gerando milhões de empregos diretos e indiretos em todo o país.</p>
+                </div>
+                <div class="card">
+                    <h3>🌍 Produção Global</h3>
+                    <p>O Brasil é o maior produtor de café, açúcar e suco de laranja do mundo. Também destaca-se na produção de soja, milho, carne bovina e suína.</p>
+                </div>
+                <div class="card">
+                    <h3>💼 Oportunidades</h3>
+                    <p>Com tecnologia de ponta e recursos naturais abundantes, o setor oferece inúmeras oportunidades de negócios e investimentos para empreendedores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-# Build output
-dist/
-build/
-out/
+    <!-- Seção Produtos -->
+    <section id="produtos" class="section section-alt">
+        <div class="container">
+            <h2>Principais Produtos Agrícolas</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <div class="produto-icon">☕</div>
+                    <h3>Café</h3>
+                    <p>Líder mundial em produção e exportação. O Brasil produz cerca de 1/3 do café consumido no mundo.</p>
+                    <span class="badge">Destaque: Minas Gerais</span>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">🌰</div>
+                    <h3>Soja</h3>
+                    <p>Segundo maior produtor mundial. Fundamental para alimentação animal e produção de óleos vegetais.</p>
+                    <span class="badge">Destaque: Mato Grosso</span>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">🌽</div>
+                    <h3>Milho</h3>
+                    <p>Importante cultura para alimentação animal e indústria. Brasil é grande exportador mundial.</p>
+                    <span class="badge">Destaque: Goiás</span>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">🍊</div>
+                    <h3>Laranja</h3>
+                    <p>Brasil lidera produção de suco de laranja concentrado. Exporta para diversos países.</p>
+                    <span class="badge">Destaque: São Paulo</span>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">🥬</div>
+                    <h3>Cana-de-Açúcar</h3>
+                    <p>Matéria-prima para açúcar, álcool e energia. Setor em constante inovação e expansão.</p>
+                    <span class="badge">Destaque: São Paulo</span>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">🐄</div>
+                    <h3>Pecuária</h3>
+                    <p>Brasil é o maior exportador de carne bovina. Também produz carne suína e frango em grande escala.</p>
+                    <span class="badge">Destaque: Mato Grosso do Sul</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-# Logs
-*.log
-logs/
+    <!-- Seção Tecnologia -->
+    <section id="tecnologia" class="section">
+        <div class="container">
+            <h2>Inovação e Tecnologia</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>🤖 Agricultura de Precisão</h3>
+                    <p>Uso de drones, sensores e GPS para otimizar o uso de recursos naturais e aumentar a produtividade.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>🧬 Melhoramento Genético</h3>
+                    <p>Desenvolvimento de sementes mais resistentes e produtivas, adaptadas às condições climáticas brasileiras.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>📱 Plataformas Digitais</h3>
+                    <p>Aplicativos e softwares para gestão agrícola, previsão de safras e análise de mercado em tempo real.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>🌱 Sustentabilidade</h3>
+                    <p>Práticas de conservação do solo, uso eficiente de água e redução de emissões de carbono.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>🔬 Biotecnologia</h3>
+                    <p>Pesquisa e desenvolvimento de novas soluções para aumentar a eficiência da produção agrícola.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>☁️ Big Data & IA</h3>
+                    <p>Análise de grandes volumes de dados para prever demandas, otimizar colheitas e reduzir riscos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-# OS
-Thumbs.db
+    <!-- Seção Dados -->
+    <section id="dados" class="section section-alt">
+        <div class="container">
+            <h2>Dados e Estatísticas</h2>
+            <div class="stats-container">
+                <div class="stat">
+                    <h3>25%</h3>
+                    <p>Percentual do PIB representado pelo agronegócio</p>
+                </div>
+                <div class="stat">
+                    <h3>7 Milhões</h3>
+                    <p>Empregos gerados pelo setor</p>
+                </div>
+                <div class="stat">
+                    <h3>$120 Bi</h3>
+                    <p>Valor aproximado das exportações anuais</p>
+                </div>
+                <div class="stat">
+                    <h3>#1</h3>
+                    <p>Ranking mundial em produção de café</p>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h3>Crescimento nos últimos 10 anos</h3>
+                <p>O agronegócio brasileiro cresceu significativamente, impulsionado por investimentos em tecnologia, expansão de áreas de cultivo e aumento da produtividade. A tendência de crescimento deve continuar com as novas tecnologias e práticas sustentáveis.</p>
+            </div>
+        </div>
+    </section>
 
-# Temporary files
-tmp/
-temp/
+    <!-- Seção Oportunidades -->
+    <section class="section">
+        <div class="container">
+            <h2>Oportunidades de Investimento</h2>
+            <div class="oportunidades-grid">
+                <div class="oportunidade-card">
+                    <h3>Startups Agtech</h3>
+                    <p>Empresas inovadoras desenvolvendo soluções tecnológicas para o setor agrícola.</p>
+                </div>
+                <div class="oportunidade-card">
+                    <h3>Produção Orgânica</h3>
+                    <p>Mercado crescente de alimentos orgânicos e certificados, com demanda global em expansão.</p>
+                </div>
+                <div class="oportunidade-card">
+                    <h3>Energia Renovável</h3>
+                    <p>Produção de biocombustíveis e energia a partir de resíduos da produção agrícola.</p>
+                </div>
+                <div class="oportunidade-card">
+                    <h3>Processamento e Valor Agregado</h3>
+                    <p>Indústrias de processamento e transformação de produtos agrícolas brutos em produtos finais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre</h4>
+                    <p>Portal informativo sobre o agronegócio brasileiro, seus produtos, tecnologias e oportunidades.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#">MAPA - Ministério da Agricultura</a></li>
+                        <li><a href="#">EMBRAPA</a></li>
+                        <li><a href="#">CONAB</a></li>
+                        <li><a href="#">ABAG</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: info@agronegociobrasil.com.br</p>
+                    <p>Telefone: (11) 3000-0000</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Agronegócio Brasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

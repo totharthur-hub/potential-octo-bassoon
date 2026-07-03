@@ -1,180 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agronegócio Brasil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agronegócio Brasil</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
 
-body{
-    background:#f4f7f2;
-    color:#333;
-}
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
 
-header{
-    background:linear-gradient(90deg,#2e7d32,#66bb6a);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-}
+        header{
+            background:#2E7D32;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
 
-nav{
-    background:#1b5e20;
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    padding:15px;
-}
+        nav{
+            background:#1B5E20;
+            padding:15px;
+            text-align:center;
+        }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+        }
 
-nav a:hover{
-    color:#c8e6c9;
-}
+        section{
+            padding:40px;
+            text-align:center;
+        }
 
-.hero{
-    text-align:center;
-    padding:60px 20px;
-}
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
 
-.hero h2{
-    font-size:38px;
-    color:#2e7d32;
-    margin-bottom:15px;
-}
+        .card{
+            background:white;
+            width:280px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+        }
 
-.hero p{
-    max-width:800px;
-    margin:auto;
-    font-size:18px;
-}
+        .card h3{
+            color:#2E7D32;
+            margin-bottom:10px;
+        }
 
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    padding:40px;
-}
+        footer{
+            background:#1B5E20;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
 
-.card{
-    background:white;
-    width:300px;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,.15);
-}
+        button{
+            background:#2E7D32;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:8px;
+            cursor:pointer;
+            margin-top:20px;
+        }
 
-.card h3{
-    color:#2e7d32;
-    margin-bottom:10px;
-}
-
-.botao{
-    display:inline-block;
-    margin-top:20px;
-    background:#2e7d32;
-    color:white;
-    padding:12px 20px;
-    text-decoration:none;
-    border-radius:8px;
-}
-
-.botao:hover{
-    background:#1b5e20;
-}
-
-footer{
-    background:#1b5e20;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
-</style>
-
+        button:hover{
+            background:#1B5E20;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
     <h1>🌱 Agronegócio Brasil</h1>
-    <p>Produzindo alimentos, gerando empregos e movimentando a economia.</p>
+    <p>O campo alimenta o mundo.</p>
 </header>
 
 <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#setores">Setores</a>
-    <a href="#importancia">Importância</a>
-    <a href="#contato">Contato</a>
+    <a href="#">Início</a>
+    <a href="#">Agricultura</a>
+    <a href="#">Pecuária</a>
+    <a href="#">Contato</a>
 </nav>
 
-<section class="hero" id="sobre">
-    <h2>O Campo Alimenta o Mundo</h2>
-
+<section>
+    <h2>Bem-vindo!</h2>
     <p>
-        O agronegócio é um dos principais pilares da economia brasileira.
-        Ele reúne atividades como agricultura, pecuária, produção de alimentos,
-        exportação e tecnologia aplicada ao campo.
+        O agronegócio é um dos setores mais importantes da economia brasileira,
+        responsável pela produção de alimentos, geração de empregos e exportações.
     </p>
 
-    <a class="botao" href="#setores">Conheça Mais</a>
+    <button onclick="alert('Obrigado por visitar o site!')">
+        Saiba Mais
+    </button>
 </section>
 
-<section class="cards" id="setores">
+<section class="cards">
 
     <div class="card">
         <h3>🌾 Agricultura</h3>
-        <p>
-            Produção de soja, milho, café, trigo, arroz, frutas e diversas culturas
-            essenciais para o consumo interno e exportação.
-        </p>
+        <p>Produção de soja, milho, café, trigo, arroz e diversas culturas.</p>
     </div>
 
     <div class="card">
         <h3>🐄 Pecuária</h3>
-        <p>
-            Criação de bovinos, suínos, aves e outros animais para produção
-            de carne, leite e derivados.
-        </p>
+        <p>Criação de bovinos, aves e suínos para produção de alimentos.</p>
     </div>
 
     <div class="card">
         <h3>🚜 Tecnologia</h3>
-        <p>
-            Máquinas modernas, drones, irrigação inteligente e agricultura
-            de precisão aumentam a produtividade no campo.
-        </p>
+        <p>Drones, máquinas modernas e agricultura de precisão aumentam a produtividade.</p>
     </div>
 
 </section>
 
-<section class="hero" id="importancia">
-    <h2>Importância do Agronegócio</h2>
-
-    <p>
-        O agronegócio gera milhões de empregos, fortalece as exportações,
-        abastece a população com alimentos e impulsiona o desenvolvimento
-        econômico do Brasil.
-    </p>
-</section>
-
-<footer id="contato">
-    <h3>Contato</h3>
-    <p>Email: contato@agronegocio.com</p>
-    <p>Telefone: (00) 99999-9999</p>
-    <br>
-    <p>© 2026 Agronegócio Brasil - Todos os direitos reservados.</p>
+<footer>
+    <p>© 2026 Agronegócio Brasil</p>
 </footer>
 
 </body>

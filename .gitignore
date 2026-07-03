@@ -1,84 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agronegócio Brasil</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background:#f4f4f4;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        header{
-            background:#0066cc;
-            color:white;
-            padding:20px;
-            text-align:center;
-        }
+body{
+    background:#f4f7f2;
+    color:#333;
+}
 
-        nav{
-            background:#004a99;
-            padding:10px;
-            text-align:center;
-        }
+header{
+    background:linear-gradient(90deg,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-        }
+nav{
+    background:#1b5e20;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:15px;
+}
 
-        section{
-            padding:40px;
-            text-align:center;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        button{
-            background:#0066cc;
-            color:white;
-            border:none;
-            padding:12px 20px;
-            border-radius:8px;
-            cursor:pointer;
-        }
+nav a:hover{
+    color:#c8e6c9;
+}
 
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:40px;
-        }
-    </style>
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:38px;
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    background:#2e7d32;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.botao:hover{
+    background:#1b5e20;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Um exemplo simples em HTML e CSS</p>
+    <h1>🌱 Agronegócio Brasil</h1>
+    <p>Produzindo alimentos, gerando empregos e movimentando a economia.</p>
 </header>
 
 <nav>
-    <a href="#">Início</a>
-    <a href="#">Sobre</a>
-    <a href="#">Serviços</a>
-    <a href="#">Contato</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#setores">Setores</a>
+    <a href="#importancia">Importância</a>
+    <a href="#contato">Contato</a>
 </nav>
 
-<section>
-    <h2>Olá!</h2>
-    <p>Este é um site criado apenas com HTML e CSS.</p>
+<section class="hero" id="sobre">
+    <h2>O Campo Alimenta o Mundo</h2>
 
-    <button onclick="alert('Obrigado por visitar!')">
-        Clique Aqui
-    </button>
+    <p>
+        O agronegócio é um dos principais pilares da economia brasileira.
+        Ele reúne atividades como agricultura, pecuária, produção de alimentos,
+        exportação e tecnologia aplicada ao campo.
+    </p>
+
+    <a class="botao" href="#setores">Conheça Mais</a>
 </section>
 
-<footer>
-    © 2026 Meu Site - Todos os direitos reservados.
+<section class="cards" id="setores">
+
+    <div class="card">
+        <h3>🌾 Agricultura</h3>
+        <p>
+            Produção de soja, milho, café, trigo, arroz, frutas e diversas culturas
+            essenciais para o consumo interno e exportação.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🐄 Pecuária</h3>
+        <p>
+            Criação de bovinos, suínos, aves e outros animais para produção
+            de carne, leite e derivados.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🚜 Tecnologia</h3>
+        <p>
+            Máquinas modernas, drones, irrigação inteligente e agricultura
+            de precisão aumentam a produtividade no campo.
+        </p>
+    </div>
+
+</section>
+
+<section class="hero" id="importancia">
+    <h2>Importância do Agronegócio</h2>
+
+    <p>
+        O agronegócio gera milhões de empregos, fortalece as exportações,
+        abastece a população com alimentos e impulsiona o desenvolvimento
+        econômico do Brasil.
+    </p>
+</section>
+
+<footer id="contato">
+    <h3>Contato</h3>
+    <p>Email: contato@agronegocio.com</p>
+    <p>Telefone: (00) 99999-9999</p>
+    <br>
+    <p>© 2026 Agronegócio Brasil - Todos os direitos reservados.</p>
 </footer>
 
 </body>

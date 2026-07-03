@@ -1,140 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agronegócio Brasil</title>
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
+# Environment variables
+.env
+.env.local
+.env.*.local
 
-        body{
-            background:#f4f4f4;
-            color:#333;
-        }
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 
-        header{
-            background:#2E7D32;
-            color:white;
-            text-align:center;
-            padding:40px;
-        }
+# Build output
+dist/
+build/
+out/
 
-        nav{
-            background:#1B5E20;
-            padding:15px;
-            text-align:center;
-        }
+# Logs
+*.log
+logs/
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+# OS
+Thumbs.db
 
-        section{
-            padding:40px;
-            text-align:center;
-        }
-
-        .cards{
-            display:flex;
-            justify-content:center;
-            gap:20px;
-            flex-wrap:wrap;
-        }
-
-        .card{
-            background:white;
-            width:280px;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,.2);
-        }
-
-        .card h3{
-            color:#2E7D32;
-            margin-bottom:10px;
-        }
-
-        footer{
-            background:#1B5E20;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:30px;
-        }
-
-        button{
-            background:#2E7D32;
-            color:white;
-            border:none;
-            padding:12px 20px;
-            border-radius:8px;
-            cursor:pointer;
-            margin-top:20px;
-        }
-
-        button:hover{
-            background:#1B5E20;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>🌱 Agronegócio Brasil</h1>
-    <p>O campo alimenta o mundo.</p>
-</header>
-
-<nav>
-    <a href="#">Início</a>
-    <a href="#">Agricultura</a>
-    <a href="#">Pecuária</a>
-    <a href="#">Contato</a>
-</nav>
-
-<section>
-    <h2>Bem-vindo!</h2>
-    <p>
-        O agronegócio é um dos setores mais importantes da economia brasileira,
-        responsável pela produção de alimentos, geração de empregos e exportações.
-    </p>
-
-    <button onclick="alert('Obrigado por visitar o site!')">
-        Saiba Mais
-    </button>
-</section>
-
-<section class="cards">
-
-    <div class="card">
-        <h3>🌾 Agricultura</h3>
-        <p>Produção de soja, milho, café, trigo, arroz e diversas culturas.</p>
-    </div>
-
-    <div class="card">
-        <h3>🐄 Pecuária</h3>
-        <p>Criação de bovinos, aves e suínos para produção de alimentos.</p>
-    </div>
-
-    <div class="card">
-        <h3>🚜 Tecnologia</h3>
-        <p>Drones, máquinas modernas e agricultura de precisão aumentam a produtividade.</p>
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Agronegócio Brasil</p>
-</footer>
-
-</body>
-</html>
+# Temporary files
+tmp/
+temp/
